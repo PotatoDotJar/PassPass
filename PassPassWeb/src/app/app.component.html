@@ -1,0 +1,4 @@
+<main class="container">
+    <ngb-alert #successAlert *ngIf="successMessage" type="success" (closed)="successMessage = ''">{{ successMessage }}</ngb-alert>
+    <router-outlet></router-outlet>
+</main>
